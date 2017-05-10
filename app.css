@@ -1,45 +1,20 @@
-:root {
-  --white: #FFFFFF;
-  --base: #4A4A4A;
-  --border: lightgrey;
-  --nav-link: rgba(74, 74, 74, 0.5);
-  --nav-link-hover: rgba(235, 235, 235, 0.5);
-  --nav-link-hover-naked: transparent;
-  --transition: 0.1s all ease-in-out;
-  --radial-gradient: radial-gradient(50% 100%, #ffffff 50%, rgba(255, 255, 255, 0.82) 100%);
-  --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  --primary: #f5a623;
-  --primary-75: rgba(245, 166, 35, 0.75);
-  --primary-50: rgba(245, 166, 35, 0.5);
-  --primary-25: rgba(245, 166, 35, 0.25);
-  --primary-lite: #ffc066;
-  --secondary: #fbda61;
-  --linkedin: #0073b1;
-  --github: #24292e;
-  --behance: #0057ff;
-  --freecodecamp: darkgreen;
-  --resume: var(--primary);
-  --works-gradient: linear-gradient(-217deg, #FBDA61 0%, #F67423 100%);
-  --philo-gradient: linear-gradient(-217deg, #99FB61 0%, #13D5C5 100%);
-  --work-with-gradient: linear-gradient(-39deg, #6176FB 0%, #F64BC7 100%);
-  --silver-gradient: linear-gradient(0deg, #FFFFFF 75%, #E9E9E9 100%);
-  --contact-gradient: linear-gradient(-217deg, #FDD956 0%, #F2B716 100%);
-  --angle1: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-  --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  --box-shdaow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  --title-rotate: rotate(-1deg);
-  --opacity: 0.8;
-  --bold: 800;
-  --display-1: 3em;
-  --title-box-sm: 150px;
-  --title-box-md: 300px;
-}
-
+/*Variables*/
+/*Colors*/
+/*Social Colors*/
+/*Gradients*/
+/*Angles*/
+/*Shadows*/
+/*Rotation*/
+/*Opacity*/
+/*Titles*/
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query since this is the default in Bootstrap */
 * {
   margin: 0;
   padding: 0;
 }
 
+/*Mobile Nav*/
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -54,51 +29,55 @@ body {
   height: 100%;
 }
 
+/*Theme OG K*/
+.k-theme-og {
+  /*Hero Gradient*/
+}
 .k-theme-og .gradient {
-  /* Rectangle 2: */
-  background-image: var(--silver-gradient);
+  background: linear-gradient(0deg, #FFFFFF 75%, #E9E9E9 100%);
 }
 
+/*HTML Elements*/
 .k-theme-og {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  /*Links*/
 }
 .k-theme-og .btn {
   border-radius: 50px;
 }
 .k-theme-og .btn-primary {
-  background: var(--primary-75);
-  border: 1px solid var(--primary);
+  background: rgba(245, 166, 35, 0.75);
+  border: 1px solid #f5a623;
 }
 .k-theme-og .btn-primary:hover {
   cursor: pointer;
-  background: var(--primary);
-  border: 1px solid var(--primary);
+  background: #f5a623;
+  border: 1px solid #f5a623;
 }
 .k-theme-og a {
   font-family: inherit;
   font-size: 1em;
   font-weight: bold;
-  color: var(--primary) !important;
-  transition: var(--transition);
+  color: #f5a623 !important;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og a:hover {
-  color: var(--primary) !important;
+  color: #f5a623 !important;
   text-decoration: none;
   background: none;
-  border-bottom: 4px solid var(--primary);
-  transition: var(--transition);
+  border-bottom: 4px solid #f5a623;
+  transition: 0.1s all ease-in-out;
 }
 
+/*Form*/
 .k-theme-og .form-cont {
   /* Webkit, Chrome & Safari */
-  /* moz://a Firefox */
   /*hide the outline behind the border*/
   /* Microsoft */
 }
 .k-theme-og .form-cont input[type="text"],
 .k-theme-og .form-cont textarea {
-  /* Rectangle 4: */
   background: rgba(220, 220, 220, 0.1);
   border: 1px solid #EFEFEF;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -106,8 +85,8 @@ body {
 }
 .k-theme-og .form-cont input[type="text"]:focus,
 .k-theme-og .form-cont textarea:focus {
-  border: 1px solid var(--primary);
-  background: var(--primary-25);
+  border: 1px solid #f5a623;
+  background: rgba(245, 166, 35, 0.25);
   color: black;
 }
 .k-theme-og .form-cont input[type=range] {
@@ -133,18 +112,18 @@ body {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: var(--primary);
+  background: #f5a623;
   margin-top: -7px;
 }
 .k-theme-og .form-cont input[type=range]:focus {
   outline: none;
 }
 .k-theme-og .form-cont input[type=range]:focus::-webkit-slider-runnable-track {
-  background: var(--primary);
+  background: #f5a623;
 }
 .k-theme-og .form-cont input[type=range]::-moz-range-track {
-  /* width: 150px;
-  height: 5px; */
+  width: 150px;
+  height: 5px;
   background: #ccc;
   border: none;
   border-radius: 3px;
@@ -154,15 +133,15 @@ body {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: var(--primary);
+  background: #f5a623;
 }
 .k-theme-og .form-cont input[type=range]::-moz-range-progress {
-  background: var(--primary);
+  background: #f5a623;
   border-radius: 10px;
   height: 1px;
 }
 .k-theme-og .form-cont input[type=range]:-moz-focusring {
-  outline: 1px solid var(--primary);
+  outline: 1px solid #f5a623;
   outline-offset: -1px;
 }
 .k-theme-og .form-cont input[type=range]::-ms-track {
@@ -180,7 +159,7 @@ body {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: var(--primary);
+  background: #f5a623;
   margin-top: 1px;
 }
 .k-theme-og .form-cont input[type=range]::-ms-fill-lower {
@@ -189,16 +168,18 @@ body {
   height: 1px;
 }
 .k-theme-og .form-cont input[type=range]::-ms-fill-upper {
-  background: var(--primary);
+  background: #f5a623;
   border-radius: 10px;
 }
 .k-theme-og .form-cont input[type=range]:focus::-ms-fill-lower {
-  background: var(--primary);
+  background: #f5a623;
 }
 .k-theme-og .form-cont input[type=range]:focus::-ms-fill-upper {
-  background: var(--primary);
+  background: #f5a623;
 }
 
+/*Custom Styles*/
+/*Mobile Navigation*/
 .csstransforms .cn-wrapper {
   font-size: 1em;
   width: 26em;
@@ -235,7 +216,7 @@ body {
 .cn-wrapper #works,
 .cn-wrapper #philosophy,
 .cn-wrapper #experience {
-  color: var(--primary);
+  color: #f5a623;
 }
 .cn-wrapper #logo {
   display: flex;
@@ -289,7 +270,7 @@ body {
 .cn-button {
   border: none;
   background: none;
-  color: var(--primary);
+  color: #f5a623;
   text-align: center;
   font-size: 1.8em;
   padding-top: 1em;
@@ -304,13 +285,13 @@ body {
   cursor: pointer;
   z-index: 11;
   top: -1.75em;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: var(--primary);
+  color: #f5a623;
 }
 
 .csstransforms .cn-wrapper li {
@@ -360,9 +341,9 @@ body {
   opacity: 0.7;
 }
 
-/* for a central angle x, the list items must be skewed by 90-x degrees
-in our case x=40deg so skew angle is 50deg
-items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+/* for a central angle x, the list items must be skewed by 90-x degrees */
+/*in our case x=40deg so skew angle is 50deg*/
+/*items should be rotated by x, minus (sum of angles - 180)2s */
 .csstransforms .cn-wrapper li:first-child {
   -webkit-transform: rotate(-10deg) skew(50deg);
   -ms-transform: rotate(-10deg) skew(50deg);
@@ -431,7 +412,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .csstransforms .cn-wrapper li:not(.active) a:hover i:before,
 .csstransforms .cn-wrapper li:not(.active) a:active i:before,
 .csstransforms .cn-wrapper li:not(.active) a:focus i:before {
-  color: var(--primary);
+  color: #f5a623;
 }
 
 .csstransforms .cn-wrapper li:not(.active) a:focus {
@@ -492,39 +473,53 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   border: 1px solid #ddd;
 }
 
+/*Body K Theme OG*/
+.k-theme-og {
+  /*Nav K Theme OG*/
+  /*Section Titles*/
+  /* Hero */
+  /*Intro*/
+  /*Experience*/
+  /*Philosophy*/
+  /*Works*/
+  /*Portfolio Items*/
+  /*Work With Us*/
+  /*Contact*/
+}
 .k-theme-og .nav-cont {
   position: relative;
+  /*Links*/
 }
 .k-theme-og .nav-cont a {
   font-family: inherit;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  color: var(--nav-link) !important;
-  transition: var(--transition);
+  color: rgba(74, 74, 74, 0.5) !important;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .nav-cont a:hover {
-  color: var(--primary) !important;
-  background: var(--nav-link-hover);
+  color: #f5a623 !important;
+  background: rgba(235, 235, 235, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: 4px solid var(--primary);
-  transition: var(--transition);
+  border-bottom: 4px solid #f5a623;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .title-cont {
-  height: var(--title-box-sm);
-  opacity: var(--opacity);
-  clip-path: var(--angle1);
-  color: var(--white);
-  font-size: var(--display-1);
-  font-weight: var(--bold);
+  height: 150px;
+  opacity: 0.8;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  color: #FFFFFF;
+  font-size: 3em;
+  font-weight: 800;
 }
 .k-theme-og .title-cont h1 {
   line-height: 150px !important;
   font-family: HiraKakuStd-W8, 'Archivo Black', sans-serif;
   font-size: 32px;
   color: #FFFFFF;
-  text-shadow: var(--text-shadow);
-  transform: var(--title-rotate);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg);
 }
 .k-theme-og .hero {
   padding-top: 94px;
@@ -533,86 +528,89 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   text-transform: uppercase;
   text-align: center;
   font-size: 48px;
-  font-weight: var(--bold);
+  font-weight: 800;
 }
 .k-theme-og .hero .hero-title span {
-  color: var(--primary);
+  color: #f5a623;
 }
 .k-theme-og .hero .hero-subtitle {
   text-align: center;
   font-weight: 100;
 }
 .k-theme-og .hero .hero-subtitle span {
-  font-weight: var(--bold);
+  font-weight: 800;
 }
 .k-theme-og .hero .hero-img {
   margin: auto;
   display: block;
 }
 .k-theme-og .intro {
-  color: var(--white);
-  text-shadow: var(--text-shadow);
+  color: #FFFFFF;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .k-theme-og .intro-bg {
-  background: var(--works-gradient);
-  opacity: var(--opacity);
-  clip-path: var(--angle1);
+  background: linear-gradient(-217deg, #FBDA61 0%, #F67423 100%);
+  opacity: 0.8;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+}
+.k-theme-og .personal-bio .mars-social {
+  /*Links*/
 }
 .k-theme-og .personal-bio .mars-social a {
-  color: var(--base) !important;
+  color: #4A4A4A !important;
 }
 .k-theme-og .personal-bio .mars-social .linkedin:hover {
-  color: var(--linkedin);
-  border-bottom: 4px solid var(--linkedin);
-  transition: var(--transition);
+  color: #0073b1;
+  border-bottom: 4px solid #0073b1;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .personal-bio .mars-social .linkedin:hover i {
-  color: var(--linkedin);
+  color: #0073b1;
 }
 .k-theme-og .personal-bio .mars-social .github:hover {
-  color: var(--github);
-  border-bottom: 4px solid var(--github);
-  transition: var(--transition);
+  color: #24292e;
+  border-bottom: 4px solid #24292e;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .personal-bio .mars-social .github:hover i {
-  color: var(--github);
+  color: #24292e;
 }
 .k-theme-og .personal-bio .mars-social .behance:hover {
-  color: var(--behance);
-  border-bottom: 4px solid var(--behance);
-  transition: var(--transition);
+  color: #0057ff;
+  border-bottom: 4px solid #0057ff;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .personal-bio .mars-social .behance:hover i {
-  color: var(--behance);
+  color: #0057ff;
 }
 .k-theme-og .personal-bio .mars-social .freecodecamp:hover {
-  color: var(--freecodecamp);
-  border-bottom: 4px solid var(--freecodecamp);
-  transition: var(--transition);
+  color: darkgreen;
+  border-bottom: 4px solid darkgreen;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .personal-bio .mars-social .freecodecamp:hover i {
-  color: var(--freecodecamp);
+  color: darkgreen;
 }
 .k-theme-og .personal-bio .mars-social .resume:hover {
-  color: var(--primary);
-  border-bottom: 4px solid var(--primary);
-  transition: var(--transition);
+  color: #f5a623;
+  border-bottom: 4px solid #f5a623;
+  transition: 0.1s all ease-in-out;
 }
 .k-theme-og .personal-bio .mars-social .resume:hover i {
-  color: var(--primary);
+  color: #f5a623;
 }
 .k-theme-og .personal-bio .mars-social a:hover {
   text-decoration: none;
   background: none;
 }
 .k-theme-og .work-with-bg {
-  background: var(--philo-gradient);
+  background: linear-gradient(-217deg, #99FB61 0%, #13D5C5 100%);
 }
 .k-theme-og .philo-bg {
-  background: var(--philo-gradient);
+  background: linear-gradient(-217deg, #99FB61 0%, #13D5C5 100%);
 }
 .k-theme-og .works-bg {
-  background: var(--works-gradient);
+  background: linear-gradient(-217deg, #FBDA61 0%, #F67423 100%);
 }
 .k-theme-og .k-logo-white {
   position: relative;
@@ -626,20 +624,20 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .k-theme-og .portfolio-cont .item-meta h6 {
   font-weight: bold;
   margin-bottom: 0;
-  color: var(--primary-50);
+  color: rgba(245, 166, 35, 0.5);
 }
 .k-theme-og .portfolio-cont .item-meta h6 span {
   margin-right: 8px;
-  color: var(--primary);
+  color: #f5a623;
 }
 .k-theme-og .portfolio-cont .item-meta small {
   color: lightgrey;
 }
 .k-theme-og .work-with-bg {
-  background: var(--work-with-gradient);
+  background: linear-gradient(-39deg, #6176FB 0%, #F64BC7 100%);
 }
 .k-theme-og .contact-bg {
-  background: var(--contact-gradient);
+  background: linear-gradient(-217deg, #FDD956 0%, #F2B716 100%);
 }
 .k-theme-og .portfolio-list li {
   margin-bottom: 24px;
@@ -648,6 +646,13 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   margin-bottom: 0;
 }
 
+.k-theme-og {
+  /*Nav k-theme-og*/
+  /*Body*/
+  /*Hero*/
+  /*Intro*/
+  /*Personal Bio*/
+}
 .k-theme-og .main-nav {
   height: 60px;
   background: rgba(244, 244, 244, 0.8);
@@ -709,6 +714,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 }
 
 @media screen and (min-width: 576px) {
+  /*Nav*/
   .k-theme-og .logo-cont {
     width: 148px;
     height: 148px;
@@ -716,11 +722,16 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     position: absolute;
   }
 
+  /*Hero*/
+  .k-theme-og {
+    /*Section Titles*/
+    /*Works*/
+  }
   .k-theme-og .hero .hero-title {
     font-size: 64px;
   }
   .k-theme-og .title-cont {
-    height: var(--title-box-md);
+    height: 300px;
   }
   .k-theme-og .title-cont h1 {
     font-size: 64px;
@@ -738,15 +749,15 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     width: 148px;
     height: 148px;
     border-radius: 100%;
-    background-image: var(--radial-gradient);
-    box-shadow: var(--box-shadow);
+    background-image: radial-gradient(50% 100%, #ffffff 50%, rgba(255, 255, 255, 0.82) 100%);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     position: absolute;
     left: 0;
     top: -40px;
     z-index: 100;
   }
   .k-theme-og .nav-cont a:hover {
-    background: var(--radial-gradient);
+    background: radial-gradient(50% 100%, #ffffff 50%, rgba(255, 255, 255, 0.82) 100%);
   }
   .k-theme-og .nav-cont #logo {
     display: flex;
@@ -759,10 +770,14 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
     left: 40px;
   }
   .k-theme-og .nav-cont #logo:hover {
-    background: var(--nav-link-hover-naked);
+    background: transparent;
     transform: scale(1.2) rotate(360deg);
   }
 
+  /*Section Titles*/
+  .k-theme-og {
+    /*Works*/
+  }
   .k-theme-og .title-cont h1 {
     font-size: 88px;
   }
