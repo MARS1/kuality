@@ -27,6 +27,8 @@
 html,
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 
 /*Theme OG K*/
@@ -39,8 +41,6 @@ body {
 
 /*HTML Elements*/
 .k-theme-og {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
   /*Links*/
 }
 .k-theme-og .btn {
@@ -212,10 +212,10 @@ body {
 }
 
 .cn-wrapper #logo,
-.cn-wrapper #contact,
-.cn-wrapper #works,
-.cn-wrapper #philosophy,
-.cn-wrapper #experience {
+.cn-wrapper #contact-ico,
+.cn-wrapper #works-ico,
+.cn-wrapper #philosophy-ico,
+.cn-wrapper #experience-ico {
   color: #f5a623;
 }
 .cn-wrapper #logo {
@@ -228,16 +228,16 @@ body {
   top: -19px;
   left: 164px;
 }
-.cn-wrapper #contact {
+.cn-wrapper #contact-ico {
   transform: rotate(-166deg);
 }
-.cn-wrapper #works {
+.cn-wrapper #works-ico {
   transform: rotate(146deg);
 }
-.cn-wrapper #philosophy {
+.cn-wrapper #philosophy-ico {
   transform: rotate(180deg);
 }
-.cn-wrapper #experience {
+.cn-wrapper #experience-ico {
   transform: rotate(130deg);
 }
 

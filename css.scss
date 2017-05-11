@@ -273,10 +273,10 @@ body {
 
 .cn-wrapper {
   #logo,
-  #contact,
-  #works,
-  #philosophy,
-  #experience {
+  #contact-ico,
+  #works-ico,
+  #philosophy-ico,
+  #experience-ico {
     color: $primary;
   }
   #logo {
@@ -289,16 +289,16 @@ body {
     top: -19px;
     left: 164px;
   }
-  #contact {
+  #contact-ico {
     transform: rotate(-166deg);
   }
-  #works {
+  #works-ico {
     transform: rotate(146deg);
   }
-  #philosophy {
+  #philosophy-ico {
     transform: rotate(180deg);
   }
-  #experience {
+  #experience-ico {
     transform: rotate(130deg);
   }
 }
